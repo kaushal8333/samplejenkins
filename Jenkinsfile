@@ -6,8 +6,9 @@ pipeline {
     stages {
         stage('Maven clean') {
             steps {
-                dir('springrestjpademo')
+                dir('springrestjpademo'){
                     sh 'mvn clean'
+                }
                 }
             }
 
